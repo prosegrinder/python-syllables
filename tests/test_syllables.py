@@ -10,7 +10,7 @@ def main():
     hits = []
     misses = []
 
-    for line in cmudict.stream():
+    for line in cmudict._stream():
         line = line.decode('utf-8').strip()
         word, phones = line.split(" ", 1)
         # Strip out the alternate designation and test anyhow
