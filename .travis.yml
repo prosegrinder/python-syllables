@@ -1,0 +1,22 @@
+language: python
+python:
+- pypy3
+- pypy
+- '3.6'
+- '3.5'
+- '3.4'
+- '2.7'
+sudo: false
+install:
+- pip install -U pip
+- pip install -U pytest
+script:
+- python ./setup.py develop
+- pytest tests/*
+deploy:
+  provider: pypi
+  user: davidlday
+  distributions: sdist bdist_wheel
+  on:
+    python: '3.6'
+    tags: true
