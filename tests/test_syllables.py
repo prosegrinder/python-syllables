@@ -10,13 +10,13 @@ def main():
     hits = []
     misses = []
 
-    for line in cmudict._stream():
-        line = line.decode('utf-8').strip()
-        word, phones = line.split(" ", 1)
-        # Strip out the alternate designation and test anyhow
-        word = re.sub(r"\(\d+\)+", '', word)
-        stresses = re.sub(r"[^012]", "", phones)
-        cmudict_syllables = len(stresses)
+    d = cmudict.dict()
+    for word in d:
+        phones = d[word][0]
+        cmudict_syllables = 0
+        for phone in phones:
+            if re.match(r"\w*[012]$", phone):
+                cmudict_syllables += 1 
         estimated_syllables = estimate_syllables(word)
         if cmudict_syllables == estimated_syllables:
             hits.append(word)
