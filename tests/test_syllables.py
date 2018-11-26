@@ -1,4 +1,4 @@
-# Adapted from: http://www.onebloke.com/2011/06/counting-syllables-accurately-in-python-on-google-app-engine/
+from __future__ import division
 import re
 
 import cmudict
