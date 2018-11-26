@@ -8,7 +8,7 @@ from setuptools import setup
 with open(path.join(path.dirname(__file__), 'syllables', 'VERSION')) as version_file:
     VERSION = version_file.read().strip()
 # Long Description
-with open(path.join(path.dirname(__file__), 'README.rst')) as readme_file:
+with open(path.join(path.dirname(__file__), 'README.md')) as readme_file:
     LONG_DESCRIPTION = readme_file.read()
 
 
@@ -28,7 +28,7 @@ setup(
     ],
     package_dir={'syllables': 'syllables'},
     package_data={
-        '': ['LICENSE', '*.rst', 'MANIFEST.in'],
+        '': ['LICENSE', '*.md', '*.rst', 'MANIFEST.in'],
     },
     include_package_data=True,
 
