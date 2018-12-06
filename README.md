@@ -40,4 +40,4 @@ Syllables provides a single function, estimate, which estimates the number fo sy
 
 Built on or modeled after the following open source projects:
 
-* [One Bloke: Counting Syllables Accurately in Python on Google App Engine](http://www.onebloke.com/2011/06/counting-syllables-accurately-in-python-on-google-app-engine/)
+  * [One Bloke: Counting Syllables Accurately in Python on Google App Engine](http://www.onebloke.com/2011/06/counting-syllables-accurately-in-python-on-google-app-engine/)
