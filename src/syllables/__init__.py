@@ -1,3 +1,10 @@
+"""Syllable Estimator
+
+Syllables is a fast, simple syllable estimator intended for use
+in places where speed matters. The module has a single function, estimate(),
+which accepts an English-language word and returns the estimated number of
+syllables in the word.
+"""
 import re
 
 import pkg_resources
@@ -176,6 +183,19 @@ for syllable in add_syllables:
 
 
 def estimate(word):
+    """Estimates the number of syllables in an English-langauge word
+
+    Parameters:
+    ----------
+    word : str
+        The English-langauge word to estimate syllables for
+
+    Returns:
+    -------
+    int
+        the estimated number of syllables in the word
+
+    """
     parts = re.split(r"[^aeiouy]+", word)
     valid_parts = []
 
