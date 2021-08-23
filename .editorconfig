@@ -11,5 +11,5 @@ end_of_line = lf
 charset = utf-8
 
 # Docstrings and comments use max_line_length = 79
-[*.py]
+[*.{py,cfg}]
 indent_size = 4
