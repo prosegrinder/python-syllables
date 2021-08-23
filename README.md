@@ -12,28 +12,34 @@ library instead.
 
 `syllables` is available on PyPI. Simply install it with `pip`:
 
-    $ pip install syllables
+```bash
+pip install syllables
+```
 
 You can also install it from source:
 
-    $ git clone https://github.com/prosegrinder/python-syllables.git
-    Cloning into 'python-syllables'...
-    ...
+```bash
+  $ git clone https://github.com/prosegrinder/python-syllables.git
+  Cloning into 'python-syllables'...
+  ...
 
-    $ cd python-syllables
-    $ python setup.py install
-    ...
+  $ cd python-syllables
+  $ python setup.py install
+  ...
+```
 
 ## Usage
 
 Syllables provides a single function, estimate, which estimates the number fo
 syllables in a single word.
 
-    >>> import syllables
-    >>> syllables.estimate('estimate')
-    4
-    >>> syllables.estimate('syllables')
-    3
+```python
+>>> import syllables
+>>> syllables.estimate('estimate')
+4
+>>> syllables.estimate('syllables')
+3
+```
 
 ## Credits
 
