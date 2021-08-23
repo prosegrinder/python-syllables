@@ -12,4 +12,4 @@ jobs:
         uses: psf/black@stable
       - name: Pylint
         uses: cclauss/GitHub-Action-for-pylint@0.7.0
-        run: pip install .; pylint **/*.py
+        run: pip install .; pylint src/**/*.py
