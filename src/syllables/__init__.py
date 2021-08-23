@@ -1,5 +1,6 @@
-import pkg_resources
 import re
+
+import pkg_resources
 
 __version__ = (
     pkg_resources.resource_string("syllables", "VERSION").decode("utf-8").strip()
@@ -7,7 +8,7 @@ __version__ = (
 
 # Estimation stuff here
 
-subSyllables = [
+sub_syllables = [
     "cial",
     "tia",
     "cius",
@@ -133,7 +134,7 @@ subSyllables = [
     "ere$",
 ]
 
-addSyllables = [
+add_syllables = [
     "ia",
     "riet",
     "dien",
@@ -165,13 +166,13 @@ addSyllables = [
     "dnt$",
 ]
 
-re_subsyllables = []
-for s in subSyllables:
-    re_subsyllables.append(re.compile(s))
+re_sub_syllables = []
+for syllable in sub_syllables:
+    re_sub_syllables.append(re.compile(syllable))
 
-re_addsyllables = []
-for s in addSyllables:
-    re_addsyllables.append(re.compile(s))
+re_add_syllables = []
+for syllable in add_syllables:
+    re_add_syllables.append(re.compile(syllable))
 
 
 def estimate(word):
@@ -184,12 +185,12 @@ def estimate(word):
 
     syllables = 0
 
-    for p in re_subsyllables:
-        if p.match(word):
+    for pattern in re_sub_syllables:
+        if pattern.match(word):
             syllables -= 1
 
-    for p in re_addsyllables:
-        if p.match(word):
+    for pattern in re_add_syllables:
+        if pattern.match(word):
             syllables += 1
 
     syllables += len(valid_parts)
