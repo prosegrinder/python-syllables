@@ -10,9 +10,9 @@ def test_estimate():
     hits = []
     misses = []
 
-    d = cmudict.dict()
-    for word in d:
-        phones = d[word][0]
+    dictionary = cmudict.dict()
+    for word in dictionary:
+        phones = dictionary[word][0]
         cmudict_syllables = 0
         for phone in phones:
             if re.match(r"\w*[012]$", phone):
