@@ -4,8 +4,9 @@ import re
 import cmudict
 import syllables
 
+
 def test_estimate():
-    EXPECTED_ACCURACY = .75
+    EXPECTED_ACCURACY = 0.75
     hits = []
     misses = []
 
@@ -26,6 +27,9 @@ def test_estimate():
     miss = len(misses)
     total = hit + miss
     ACCURACY = hit / total
-    if (ACCURACY < EXPECTED_ACCURACY):
-        raise AssertionError('syllables.estimate(): Expected accuracy of {0}, got {1}.'.format(
-            EXPECTED_ACCURACY, ACCURACY))
+    if ACCURACY < EXPECTED_ACCURACY:
+        raise AssertionError(
+            "syllables.estimate(): Expected accuracy of {0}, got {1}.".format(
+                EXPECTED_ACCURACY, ACCURACY
+            )
+        )
