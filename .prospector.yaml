@@ -1,0 +1,23 @@
+output-format: grouped
+
+strictness: medium
+test-warnings: false
+doc-warnings: true
+member-warnings: true
+inherits:
+  - default
+ignore-paths:
+  - build
+  - dist
+# ignore-patterns:
+#   - (^|/)skip(this)?(/|$)
+autodetect: true
+max-line-length: 88
+
+pep257:
+  disable:
+    - D211
+    - D212
+
+pylint:
+  run: false
