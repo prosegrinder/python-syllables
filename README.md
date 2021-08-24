@@ -30,7 +30,7 @@ You can also install it from source:
 
 ## Usage
 
-Syllables provides a single function, estimate, which estimates the number fo
+Syllables provides a single function, estimate, which estimates the number of
 syllables in a single word.
 
 ```python
