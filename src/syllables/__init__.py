@@ -6,12 +6,14 @@ which accepts an English-language word and returns the estimated number of
 syllables in the word.
 """
 import re
+import sys
 
-import pkg_resources
+if sys.version_info >= (3, 9):
+    from importlib import metadata
+else:
+    import importlib_metadata as metadata
 
-__version__ = (
-    pkg_resources.resource_string("syllables", "VERSION").decode("utf-8").strip()
-)
+__version__ = metadata.version(__name__)
 
 # Estimation stuff here
 

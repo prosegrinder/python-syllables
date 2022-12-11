@@ -16,18 +16,6 @@ library instead.
 pip install syllables
 ```
 
-You can also install it from source:
-
-```bash
-  $ git clone https://github.com/prosegrinder/python-syllables.git
-  Cloning into 'python-syllables'...
-  ...
-
-  $ cd python-syllables
-  $ python setup.py install
-  ...
-```
-
 ## Usage
 
 Syllables provides a single function, estimate, which estimates the number of
