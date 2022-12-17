@@ -11,7 +11,8 @@ concurrency:
 
 jobs:
   release:
-    if: "!startsWith(github.event.head_commit.message, 'bump:')"
+    if: "!startsWith(github.ref, 'refs/tags/v')"
+    # Don't run on tags
     needs: ci
     uses: prosegrinder/.github/.github/workflows/poetry-release.yaml@main
     secrets:
