@@ -1,11 +1,3 @@
-## v1.0.6 (2022-12-17)
-
-### Fix
-
-- pass version bump token
-- incremental changelog by default
-- removed incremental changelog and for bump
-
 ## v1.0.5 (2022-12-13)
 
 ### Fix
