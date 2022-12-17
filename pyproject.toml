@@ -1,5 +1,5 @@
 [tool.commitizen]
-version = "1.0.5"
+version = "1.0.6"
 tag_format = "v$version"
 update_changelog_on_bump = true
 changelog_incremental = true
@@ -10,7 +10,7 @@ version_files = [
 
 [tool.poetry]
 name = "syllables"
-version = "1.0.5"
+version = "1.0.6"
 description = "A Python package for estimating the number of syllables in a word."
 authors = ["David L. Day <david@davidlday.com>"]
 license = "GPLv3"
