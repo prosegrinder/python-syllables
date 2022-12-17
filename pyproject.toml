@@ -3,7 +3,7 @@ version = "1.0.5"
 tag_format = "v$version"
 update_changelog_on_bump = true
 changelog_incremental = true
-bump_message = "bump: [skip ci] $current_version → $new_version"
+bump_message = "bump: $current_version → $new_version"
 version_files = [
   "pyproject.toml:version",
 ]
