@@ -11,11 +11,13 @@ concurrency:
 
 jobs:
   ci:
+    if: github.ref == 'refs/heads/main'
     uses: prosegrinder/.github/.github/workflows/poetry-ci.yaml@main
     secrets:
       VERSION_BUMP_TAG_TOKEN: "${{ secrets.VERSION_BUMP_TAG_TOKEN }}"
 
   publish:
+    if: github.ref == 'refs/heads/main'
     needs: ci
     uses: prosegrinder/.github/.github/workflows/poetry-publish.yaml@main
     secrets:
