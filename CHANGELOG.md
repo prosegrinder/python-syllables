@@ -1,3 +1,17 @@
+## v1.0.6 (2022-12-17)
+
+### Fix
+
+- don't run on bump and removed needs
+- merge pull request #14 from prosegrinder/fix/relase-publish-workflows
+- republishing 1.0.6
+- added token for ci
+- removed skipping ci
+- reverted to 1.0.5
+- pass version bump token
+- incremental changelog by default
+- removed incremental changelog and for bump
+
 ## v1.0.5 (2022-12-13)
 
 ### Fix
