@@ -8,5 +8,5 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  python-poetry-ci:
-    uses: prosegrinder/.github/.github/workflows/python-poetry-ci.yaml@main
+  ci:
+    uses: prosegrinder/.github/.github/workflows/poetry-ci.yaml@main
