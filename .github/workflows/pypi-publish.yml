@@ -12,6 +12,8 @@ concurrency:
 jobs:
   ci:
     uses: prosegrinder/.github/.github/workflows/poetry-ci.yaml@main
+    secrets:
+      VERSION_BUMP_TAG_TOKEN: "${{ secrets.VERSION_BUMP_TAG_TOKEN }}"
 
   publish:
     needs: ci
