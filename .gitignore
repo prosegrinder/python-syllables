@@ -102,3 +102,6 @@ ENV/
 
 # pytest
 .pytest_cache/
+
+# commitizen release body
+release-body.md
