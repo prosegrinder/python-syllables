@@ -18,5 +18,4 @@ jobs:
   cz-dry-run:
     needs: test
     uses: prosegrinder/.github/.github/workflows/poetry-cz-dry-run.yaml@main
-    secrets:
-      VERSION_BUMP_TAG_TOKEN: "${{ secrets.VERSION_BUMP_TAG_TOKEN }}"
+    secrets: inherit
