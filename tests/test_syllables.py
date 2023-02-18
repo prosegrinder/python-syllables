@@ -5,6 +5,12 @@ import cmudict
 import syllables
 
 
+def test_capitalization():
+    assert syllables.estimate("according") == 3
+    assert syllables.estimate("according".upper()) == 3
+    assert syllables.estimate("ACCORDING") == 3
+
+
 def test_estimate():
     EXPECTED_ACCURACY = 0.75
     hits = []
