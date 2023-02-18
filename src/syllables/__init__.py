@@ -198,7 +198,7 @@ def estimate(word):
         the estimated number of syllables in the word
 
     """
-    parts = re.split(r"[^aeiouy]+", word)
+    parts = re.split(r"[^aeiouy]+", word.lower())
     valid_parts = []
 
     for part in parts:
