@@ -1,3 +1,10 @@
+## v1.0.7 (2023-02-18)
+
+### Fix
+
+- removed case sensitivity (#29)
+- inherit all secrets
+
 ## v1.0.6 (2022-12-18)
 
 ### Fix
