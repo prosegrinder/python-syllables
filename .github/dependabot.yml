@@ -2,6 +2,10 @@ version: 2
 updates:
 - package-ecosystem: pip
   directory: "/"
+  commit-message:
+    prefix: "patch"
+    prefix-development: "build"
+    include: "scope"
   schedule:
     interval: weekly
     day: friday
