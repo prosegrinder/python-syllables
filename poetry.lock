@@ -87,17 +87,17 @@ importlib-metadata = {version = "*", markers = "python_version < \"3.8\""}
 
 [[package]]
 name = "cmudict"
-version = "1.0.13"
+version = "1.0.15"
 description = "A versioned python wrapper package for The CMU Pronouncing Dictionary data files."
 optional = false
 python-versions = ">=3.7.2,<4.0.0"
 files = [
-    {file = "cmudict-1.0.13-py3-none-any.whl", hash = "sha256:93859ffe137f59c2938347b4bd5aab534d12191b9e719160ceb4f26a5e2de9a0"},
-    {file = "cmudict-1.0.13.tar.gz", hash = "sha256:09dab0a848924e43aab3cb9199189dd7f8adf6c98b2c09cb6bb06a85039f431b"},
+    {file = "cmudict-1.0.15-py3-none-any.whl", hash = "sha256:e2332624762540c2dac492f91e2570ac6f2f91da5428a0960509010a0f8af671"},
+    {file = "cmudict-1.0.15.tar.gz", hash = "sha256:51d3392a4254d3e6b64aaec3ed345b986a4d5556442c29799ef17f2e7c276715"},
 ]
 
 [package.dependencies]
-importlib-metadata = ">=5.1.0,<6.0.0"
+importlib-metadata = ">=5.1,<7.0"
 importlib-resources = ">=5.10.1,<6.0.0"
 
 [[package]]
