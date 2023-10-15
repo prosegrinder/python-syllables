@@ -1,7 +1,7 @@
 # Syllables: A fast syllable estimator for Python
 
 [![Latest PyPI version](https://img.shields.io/pypi/v/syllables.svg)](https://pypi.python.org/pypi/syllables)
-[![Python CI](https://github.com/prosegrinder/python-syllables/workflows/Python%20CI/badge.svg?branch=main)](https://github.com/prosegrinder/python-syllables/actions?query=workflow%3A%22Python+CI%22)
+[![Python Poetry CI](https://github.com/prosegrinder/python-syllables/actions/workflows/python-ci.yml/badge.svg)](https://github.com/prosegrinder/python-syllables/actions/workflows/python-ci.yml)
 
 Syllables is a fast, simple syllable estimator for Python. It's intended for use
 in places where speed matters. For situations where accuracy matters, please
