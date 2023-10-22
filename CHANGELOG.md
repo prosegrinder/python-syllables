@@ -1,3 +1,9 @@
+## v1.0.9 (2023-10-22)
+
+### Fix
+
+- **deps**: bump importlib-metadata from 5.2.0 to 6.7.0
+
 ## v1.0.8 (2023-10-15)
 
 ### Fix
