@@ -64,7 +64,6 @@ jobs:
       - lint
       - mypy
       - bandit
-    name: "Run tests"
     uses: prosegrinder/.github/.github/workflows/poetry-test.yaml@main
 
   cz-dry-run:
