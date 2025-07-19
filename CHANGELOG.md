@@ -1,3 +1,15 @@
+## v1.1.0 (2025-07-19)
+
+### Feat
+
+- add types and bump required python >=3.9 (#62)
+- add typed marker
+- add type hints
+
+### Fix
+
+- remove unused imports
+
 ## v1.0.9 (2023-10-22)
 
 ### Fix
