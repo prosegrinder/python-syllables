@@ -181,7 +181,7 @@ for syllable in add_syllables:
     re_add_syllables.append(re.compile(syllable))
 
 
-def estimate(word):
+def estimate(word: str) -> int:
     """Estimates the number of syllables in an English-langauge word
 
     Parameters:
