@@ -32,9 +32,8 @@ jobs:
       - name: Install project
         run: poetry install --with dev --no-interaction
       - name: MyPy
-        run:
-          poetry run mypy src/ --config-file pyproject.toml --install-types
-          --non-interactive
+        run: |
+          poetry run mypy src/**/*.py --config-file pyproject.toml --non-interactive
 
   bandit:
     runs-on: ubuntu-latest
