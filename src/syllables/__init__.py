@@ -5,13 +5,10 @@ in places where speed matters. The module has a single function, estimate(),
 which accepts an English-language word and returns the estimated number of
 syllables in the word.
 """
-import re
-import sys
 
-if sys.version_info >= (3, 9):
-    from importlib import metadata
-else:
-    import importlib_metadata as metadata
+import re
+
+from importlib import metadata
 
 __version__ = metadata.version(__name__)
 
