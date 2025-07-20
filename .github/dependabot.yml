@@ -12,8 +12,6 @@ updates:
       time: "17:00"
       timezone: America/New_York
     open-pull-requests-limit: 10
-    reviewers:
-      - davidlday
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
@@ -24,5 +22,3 @@ updates:
     commit-message:
       prefix: "ci"
       include: scope
-    reviewers:
-      - davidlday
