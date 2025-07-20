@@ -8,60 +8,22 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  lint:
-    uses: prosegrinder/.github/.github/workflows/poetry-lint.yaml@main
+  pylint:
+    uses: prosegrinder/.github/.github/workflows/poetry-pylint.yaml@main
+
+  black:
+    uses: prosegrinder/.github/.github/workflows/poetry-black.yaml@main
 
   mypy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check Out
-        uses: actions/checkout@v4
-        with:
-          submodules: true
-      - name: Install Poetry
-        uses: snok/install-poetry@v1
-        with:
-          virtualenvs-create: true
-          virtualenvs-in-project: true
-          installer-parallel: true
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          cache: "poetry"
-          python-version: "3.x"
-      - name: Install project
-        run: poetry install --with dev --no-interaction
-      - name: MyPy
-        run: |
-          poetry run mypy src/**/*.py --config-file pyproject.toml
+    uses: prosegrinder/.github/.github/workflows/poetry-mypy.yaml@main
 
   bandit:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check Out
-        uses: actions/checkout@v4
-        with:
-          submodules: true
-      - name: Install Poetry
-        uses: snok/install-poetry@v1
-        with:
-          virtualenvs-create: true
-          virtualenvs-in-project: true
-          installer-parallel: true
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          cache: "poetry"
-          python-version: "3.x"
-      - name: Install project
-        run: poetry install --with dev --no-interaction
-      - name: Bandit
-        run: |
-          poetry run bandit --configfile pyproject.toml --recursive src/**/*.py
+    uses: prosegrinder/.github/.github/workflows/poetry-bandit.yaml@main
 
   test:
     needs:
-      - lint
+      - pylint
+      - black
       - mypy
       - bandit
     uses: prosegrinder/.github/.github/workflows/poetry-test.yaml@main
