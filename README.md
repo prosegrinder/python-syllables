@@ -33,4 +33,4 @@ syllables in a single word.
 
 Built on or modeled after the following open source projects:
 
-- [One Bloke: Counting Syllables Accurately in Python on Google App Engine](http://www.onebloke.com/2011/06/counting-syllables-accurately-in-python-on-google-app-engine/)
+- [One Bloke: Counting Syllables Accurately in Python on Google App Engine](https://web.archive.org/web/20250403190129/http://www.onebloke.com/2011/06/counting-syllables-accurately-in-python-on-google-app-engine/)
