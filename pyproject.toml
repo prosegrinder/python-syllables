@@ -1,16 +1,6 @@
-[tool.commitizen]
-version = "1.1.1"
-tag_format = "v$version"
-update_changelog_on_bump = true
-changelog_incremental = true
-bump_message = "bump: $current_version → $new_version"
-version_files = [
-  "pyproject.toml:version",
-]
-
 [project]
 name = "syllables"
-version = "1.1.1"
+dynamic = ["version"]
 description = "A Python package for estimating the number of syllables in a word."
 license = { text = "GPLv3" }
 readme = "README.md"
@@ -39,6 +29,18 @@ homepage = "https://github.com/prosegrinder/python-syllables"
 repository = "https://github.com/prosegrinder/python-syllables"
 "Bug Tracker" = "https://github.com/prosegrinder/python-syllables/issues"
 
+[tool.commitizen]
+version = "1.1.0"
+tag_format = "v$version"
+update_changelog_on_bump = true
+changelog_incremental = true
+bump_message = "bump: $current_version → $new_version"
+version_files = [
+  "pyproject.toml:version",
+]
+
+[tool.poetry]
+version = "1.1.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.2.0"
