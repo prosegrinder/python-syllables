@@ -43,8 +43,8 @@ classifiers = [
 ]
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^8.4.1"
-pylint = "^3.3.8"
+pytest = "^8.4.2"
+pylint = "^3.3.9"
 black = ">=22.12,<26.0"
 mypy = "^1.18.2"
 bandit = "^1.8.6"
