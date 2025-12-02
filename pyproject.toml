@@ -46,7 +46,7 @@ classifiers = [
 pytest = "^8.4.2"
 pylint = "^3.3.9"
 black = ">=22.12,<26.0"
-mypy = "^1.18.2"
+mypy = "^1.19.0"
 bandit = "^1.8.6"
 
 [build-system]
