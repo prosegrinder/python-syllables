@@ -109,14 +109,14 @@ colorama = {version = "*", markers = "platform_system == \"Windows\""}
 
 [[package]]
 name = "cmudict"
-version = "1.1.2"
+version = "1.1.3"
 description = "A versioned python wrapper package for The CMU Pronouncing Dictionary data files."
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "cmudict-1.1.2-py3-none-any.whl", hash = "sha256:7caca8c4aef7390046464b8660f4dcd13c3797799047f88abd1e9ee75d368cf7"},
-    {file = "cmudict-1.1.2.tar.gz", hash = "sha256:22165def734f1a9c191ca168c066d7ea582c8b8da790da3e8344e965e2647db8"},
+    {file = "cmudict-1.1.3-py3-none-any.whl", hash = "sha256:e4d421341bf9fa774bcded8e7d6c5d73a1bf8f88edbe129207713850abac4995"},
+    {file = "cmudict-1.1.3.tar.gz", hash = "sha256:f6c1cb9a2ffecef387bf1a1b93be6c61c91bc6f41714f183c3eb4d5b3e1ff5f6"},
 ]
 
 [package.dependencies]
